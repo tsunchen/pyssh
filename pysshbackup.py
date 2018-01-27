@@ -26,7 +26,7 @@ class SFTPClient(object):
 		self.sftp.mkdir(path)
 
 	def put(self, src, dst):
-		self.sftp.rename(src, dst)
+		self.sftp.put(src, dst)
 
 	def move(self, src, dst):
 		self.sftp.rename(src, dst)
